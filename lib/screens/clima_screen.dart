@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-const String apiKey = 'e23324994434458eaef7d83a9fbebd34';
+const String apiKey = ''; // API OPENWEATHER
 
 class ClimaScreen extends StatefulWidget {
   @override
@@ -51,7 +51,7 @@ class _ClimaScreenState extends State<ClimaScreen> {
                 color: Colors.black,
               ),
             ),
-            // Adicione mais widgets para mostrar outros dados climáticos.
+            
           ],
         ),
       ),
@@ -114,7 +114,6 @@ class _ClimaScreenState extends State<ClimaScreen> {
           _temperaturaAtual = data['main']['temp'].toInt();
         });
       } else {
-        // Handle errors, ex: Cidade não encontrada.
         print('Erro na requisição: ${response.statusCode}');
       }
     } catch (e) {
