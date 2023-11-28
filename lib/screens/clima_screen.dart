@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-const String apiKey = ''; // API OPENWEATHER
+const String apiKey = 'COLOQUE SUA API KEY AQUI'; // API OPENWEATHER
 
 class ClimaScreen extends StatefulWidget {
   @override
